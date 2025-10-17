@@ -1,0 +1,285 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 130 and seed -4605115338194281201 with 10 workers on 10 cores with 3641MB heap and 64MB offheap memory [pid: 45441] (Mac OS X 15.6.1 aarch64, Homebrew 25 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/Developer/alpenglow-formal-verification/tla/AlpenglowMinimal.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/Naturals.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/FiniteSets.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/Sequences.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/TLC.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module AlpenglowMinimal
+Starting... (2025-10-17 02:06:00)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2025-10-17 02:06:06.
+Error: Deadlock reached.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> -2, tag |-> "NONE"] @@
+        n2 :> [slot |-> -2, tag |-> "NONE"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"]}
+
+State 2: <ProduceBlock line 199, col 5 to line 207, col 64 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> -2, tag |-> "NONE"] @@
+        n2 :> [slot |-> -2, tag |-> "NONE"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 3: <HonestNotarize line 228, col 5 to line 233, col 64 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> -2, tag |-> "NONE"] @@
+        n2 :> [slot |-> -2, tag |-> "NONE"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 4: <RotorAction line 392, col 33 to line 392, col 76 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> -2, tag |-> "NONE"] @@
+        n2 :> [slot |-> -2, tag |-> "NONE"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 5: <HonestNotarize line 228, col 5 to line 233, col 64 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1, n2}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> -2, tag |-> "NONE"] @@
+        n2 :> [slot |-> -2, tag |-> "NONE"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 6: <RotorAction line 392, col 33 to line 392, col 76 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1, n2}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> -2, tag |-> "NONE"] @@
+        n2 :> [slot |-> -2, tag |-> "NONE"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 7: <HonestNotarize line 228, col 5 to line 233, col 64 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1, n2, n3}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> -2, tag |-> "NONE"] @@
+        n2 :> [slot |-> -2, tag |-> "NONE"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 8: <HonestFinalVote line 257, col 5 to line 261, col 64 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1, n2, n3}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> 0, tag |-> "A"] @@
+        n2 :> [slot |-> -2, tag |-> "NONE"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 9: <HonestFinalVote line 257, col 5 to line 261, col 64 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1, n2, n3}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> 0, tag |-> "A"] @@
+        n2 :> [slot |-> 0, tag |-> "A"] @@
+        n3 :> [slot |-> -2, tag |-> "NONE"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 10: <HonestFinalVote line 257, col 5 to line 261, col 64 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1, n2, n3}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> 0, tag |-> "A"] @@
+        n2 :> [slot |-> 0, tag |-> "A"] @@
+        n3 :> [slot |-> 0, tag |-> "A"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 11: <RotorAction line 392, col 33 to line 392, col 76 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1, n2, n3}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> 0, tag |-> "A"] @@
+        n2 :> [slot |-> 0, tag |-> "A"] @@
+        n3 :> [slot |-> 0, tag |-> "A"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+State 12: <RegisterFinalCertificate line 285, col 5 to line 294, col 51 of module AlpenglowMinimal>
+/\ notarizedBlocks = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+/\ skipFallbackVotes = (0 :> {})
+/\ delivered = ( n1 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n2 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n3 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} @@
+  n4 :> {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]} )
+/\ fastFinalized = {}
+/\ skipVotes = (0 :> {})
+/\ notarVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {n1, n2, n3}))
+/\ finalVotes = ( 0 :>
+      ( n1 :> [slot |-> 0, tag |-> "A"] @@
+        n2 :> [slot |-> 0, tag |-> "A"] @@
+        n3 :> [slot |-> 0, tag |-> "A"] @@
+        n4 :> [slot |-> -2, tag |-> "NONE"] ) )
+/\ timeoutsFired = (0 :> FALSE)
+/\ timeoutsArmed = (0 :> FALSE)
+/\ parentReady = (0 :> TRUE)
+/\ finalized = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+/\ notarFallbackVotes = (0 :> ([slot |-> 0, tag |-> "A"] :> {}))
+/\ produced = {[slot |-> -1, tag |-> "G"], [slot |-> 0, tag |-> "A"]}
+
+89 states generated, 35 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 12.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 3 and the 95th percentile is 3).
+Finished in 05s at (2025-10-17 02:06:06)

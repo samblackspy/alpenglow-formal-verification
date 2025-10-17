@@ -1,0 +1,25 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 96 and seed 5885318954415390273 with 8 workers on 10 cores with 3641MB heap and 64MB offheap memory [pid: 13656] (Mac OS X 15.6.1 aarch64, Homebrew 25 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/Developer/alpenglow-formal-verification/tla/AlpenglowMinimal.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/Naturals.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/FiniteSets.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/Sequences.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/TLC.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module AlpenglowMinimal
+Starting... (2025-10-17 12:39:14)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2025-10-17 12:39:19.
+Progress(17) at 2025-10-17 12:39:22: 1,144,530 states generated (1,144,530 s/min), 118,812 distinct states found (118,812 ds/min), 35,838 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 7.1E-8
+  based on the actual fingerprints:  val = 2.6E-7
+4368037 states generated, 322856 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 29.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 14 and the 95th percentile is 4).
+Finished in 16s at (2025-10-17 12:39:31)

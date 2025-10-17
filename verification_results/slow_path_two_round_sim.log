@@ -1,0 +1,30 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running Random Simulation with seed 8596283168045448021 with 8 workers on 10 cores with 3641MB heap and 64MB offheap memory [pid: 26424] (Mac OS X 15.6.1 aarch64, Homebrew 25 x86_64).
+Parsing file /Users/admin/Developer/alpenglow-formal-verification/tla/Alpenglow.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/Integers.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/FiniteSets.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/Sequences.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/TLC.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/Reals.tla
+Parsing file /private/var/folders/4q/rx_ns0jd53j3x4d5nr2qq8bm0000gn/T/Naturals.tla
+Parsing file /Users/admin/Developer/alpenglow-formal-verification/tla/AlpenglowAbstract.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Reals
+Semantic processing of module AlpenglowAbstract
+Semantic processing of module Alpenglow
+Starting... (2025-10-17 13:59:22)
+Computed 775 initial states...
+Progress: 2694739 states checked.
+Progress: 5274592 states checked.
+Progress: 7914176 states checked.
+Progress: 10409503 states checked.
+Progress: 12910091 states checked.
+Progress: 15604926 states checked.
+Progress: 18260014 states checked.
+Progress: 20834730 states checked.
+Progress: 23296915 states checked.
+Progress: 25804125 states checked.

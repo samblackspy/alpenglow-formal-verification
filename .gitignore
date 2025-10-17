@@ -1,0 +1,11 @@
+/states
+/stateright/target
+_apalache-out
+/apalache-0.50.3
+tla2tools.jar
+/apalache-0.44.0
+/_apalache-out
+tlatools.jar
+/tla/states
+/scripts/states
+/stateright
